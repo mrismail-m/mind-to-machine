@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 12 145 78" fill="none" role="img" aria-label="Three-dimensional Google Developer Groups mark">
+<defs>
+  <linearGradient id="bg" x1="20" y1="0" x2="180" y2="110" gradientUnits="userSpaceOnUse"><stop stop-color="#182b31"/><stop offset="1" stop-color="#061115"/></linearGradient>
+  <linearGradient id="r" x2="1" y2="1"><stop stop-color="#ffb4a5"/><stop offset=".4" stop-color="#ea4335"/><stop offset="1" stop-color="#a42321"/></linearGradient>
+  <linearGradient id="b" x2="1" y2="1"><stop stop-color="#b4d6ff"/><stop offset=".45" stop-color="#4285f4"/><stop offset="1" stop-color="#1a4ca6"/></linearGradient>
+  <linearGradient id="g" x2="1" y2="1"><stop stop-color="#b6f6cf"/><stop offset=".45" stop-color="#34a853"/><stop offset="1" stop-color="#176a37"/></linearGradient>
+  <linearGradient id="y" x2="1" y2="1"><stop stop-color="#fff2af"/><stop offset=".45" stop-color="#fbbc04"/><stop offset="1" stop-color="#bf7910"/></linearGradient>
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="220%"><feGaussianBlur stdDeviation="5"/></filter>
+  <g id="brackets" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"><path d="M76 28 43 49 76 70"/><path d="m124 28 33 21-33 21"/></g>
+</defs>
+
+
+<g transform="translate(5 6) rotate(-9 100 55)"><use href="#brackets" stroke="#03090c" stroke-width="15"/><use href="#brackets" transform="translate(-1 -1)" stroke="#163442"/><use href="#brackets" transform="translate(-2 -2)" stroke="#244751"/></g>
+<g transform="rotate(-9 100 55)" stroke-width="13" stroke-linecap="round"><path d="M76 28 43 49" stroke="url(#r)"/><path d="m43 49 33 21" stroke="url(#b)"/><path d="m124 28 33 21" stroke="url(#g)"/><path d="m157 49-33 21" stroke="url(#y)"/></g>
+<g transform="rotate(-9 100 55)" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity=".5"><path d="m74 24-31 20"/><path d="m45 50 29 18"/><path d="m125 23 30 20"/><path d="m153 48-29 19"/></g>
+</svg>

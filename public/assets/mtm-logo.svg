@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="24" viewBox="0 0 74 24" fill="none" role="img" aria-labelledby="mtm-title">
+  <title id="mtm-title">MTM — Mind to Machine</title>
+  <!-- Match the original wordmark's 5.53-unit strokes, compact spacing,
+       rounded outside shoulders, and solid black geometric lettering. -->
+  <defs>
+    <path id="mtm-m" d="M0 23.7V5.744C0 2.298 2.358 0 5.894 0H7.2L13.4 8.5L19.6 0H20.906C24.442 0 26.8 2.298 26.8 5.744V23.7H21.274V8.8L15.9 16.1H10.9L5.526 8.8V23.7H0Z"/>
+  </defs>
+  <g fill="black" transform="translate(0 .15)">
+    <use href="#mtm-m"/>
+    <path d="M45.55 0V5.385H39.288V23.7H33.762V5.385H27.5V0H45.55Z"/>
+    <use href="#mtm-m" transform="translate(46.25 0)"/>
+  </g>
+</svg>

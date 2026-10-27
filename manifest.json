@@ -1,0 +1,58 @@
+{
+  "https://www.techto.org/": {
+    "kind": "page",
+    "local": "/index.html",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 96046,
+    "error": null
+  },
+  "https://cdn.prod.website-files.com/66f1864b4a6f3045a6a2ca3e/66f1d6a80b2c1b8c290849ce_Arc.png": {
+    "kind": "asset",
+    "local": "/assets/cdn.prod.website-files.com/80a75861ba1ba56de41e.png",
+    "content_type": "image/png",
+    "bytes": 18970,
+    "error": null
+  },
+  "https://cdn.prod.website-files.com/66f1864b4a6f3045a6a2ca3e/66f1d6a843e1c29d2193a093_cells.png": {
+    "kind": "asset",
+    "local": "/assets/cdn.prod.website-files.com/c9f27a26e4e2d0cf46a3.png",
+    "content_type": "image/png",
+    "bytes": 22792,
+    "error": null
+  },
+  "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js": {
+    "kind": "asset",
+    "local": "/assets/cdn.jsdelivr.net/bf5b26673eeed42ba8e7.js",
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 72214,
+    "error": null
+  },
+  "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js": {
+    "kind": "asset",
+    "local": "/assets/cdn.jsdelivr.net/8275e947aa32ef1d03bb.js",
+    "content_type": "application/javascript; charset=utf-8",
+    "bytes": 43380,
+    "error": null
+  },
+  "https://cdn.prod.website-files.com/66f1864b4a6f3045a6a2ca3e/66f1c509f20ccbe1275949eb_Artex-Regular.ttf": {
+    "kind": "asset",
+    "local": "/assets/cdn.prod.website-files.com/7f8da7bbca276a594c1d.ttf",
+    "content_type": "application/x-font-ttf",
+    "bytes": 145744,
+    "error": null
+  },
+  "https://cdn.prod.website-files.com/66f1864b4a6f3045a6a2ca3e/66f1c50940339628645df1a0_FeatureDisplay-Regular.otf": {
+    "kind": "asset",
+    "local": "/assets/cdn.prod.website-files.com/2eac460a0df131e10fab.otf",
+    "content_type": "application/x-font-otf",
+    "bytes": 113636,
+    "error": null
+  },
+  "https://cdn.prod.website-files.com/66f1864b4a6f3045a6a2ca3e/66f1d3500ffef8dfd0d182a9_PPMondwest-Regular%20(1).otf": {
+    "kind": "asset",
+    "local": "/assets/cdn.prod.website-files.com/631b798b764e962775ff.otf",
+    "content_type": "application/x-font-otf",
+    "bytes": 144460,
+    "error": null
+  }
+}
