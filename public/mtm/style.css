@@ -62,3 +62,5 @@ input[type=file]{padding:14px;font-size:13px}input[type=file]::file-selector-but
 @media(max-width:650px){.swag-item .benefit-icon{width:55px;height:90px}.sponsor-slot img[alt="GitHub"]{width:48px;max-height:48px}.handbook-hero{padding-top:0}.handbook-hero h1{font-size:68px}.handbook-hero .page-intro{font-size:17px}.guide-panel{padding:27px 22px;border-radius:22px;margin-top:20px}.guide-panel h2{font-size:39px}.guide-panel p,.guide-panel li{font-size:14px}.guide-badges span{font-size:9px;padding:9px 12px}.guide-timeline{grid-template-columns:1fr}.guide-stop{padding:20px 16px;gap:15px}.guide-stop h3{font-size:20px}.guide-stop p{font-size:11px}.guide-panel th,.guide-panel td{padding:12px 8px}.guide-panel th{width:33%}}
 
 .organizer-photo:before,.organizer-photo:after{display:none}.organizer-photo img{width:100%;height:100%;object-fit:cover;object-position:center 25%}.organizer-photo{display:block}.organizer-photo img[alt="Maleeha Zulifqar"]{object-position:center 30%}
+/* Preserve the supplied MTM wordmark's cropped proportions. */
+.brand img{width:86px;height:auto}.footer-logo{width:115px;height:auto}
