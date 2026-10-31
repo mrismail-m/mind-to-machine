@@ -16,17 +16,6 @@ document.addEventListener('keydown', event => {
 document.addEventListener('click', event => {
   if (!event.target.closest('.nav')) closeMenu();
 });
-const dialog = document.querySelector('#registration-status');
-document.querySelectorAll('[data-register]').forEach(button => {
-  button.addEventListener('click', () => {
-    document.querySelector('#selected-pass').textContent = button.dataset.register;
-    dialog.showModal();
-  });
-});
-dialog.addEventListener('click', event => {
-  if (event.target === dialog) dialog.close();
-});
-
 // Restore the captured site's entrance reveals, scroll motion, and text scramble.
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 const pixelHeadings = document.querySelectorAll('h1 .pixel, h2 .pixel');
