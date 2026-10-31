@@ -1,14 +1,13 @@
 # Registration collection
 
-1. Create a form in the organizer's Formspree account: https://formspree.io/.
-2. Copy its form endpoint, for example `https://formspree.io/f/abcdefgh`.
-3. Set `endpoint` in `public/mtm/registration-config.json` to that URL.
-4. Confirm whether the displayed PKR 2,500 / 3,000 fee is per participant or per team. Update the text across the landing page, handbook, and registration page, then set `feeBasisConfirmed` to `true`.
-5. Configure the form's spam protection and restrict dashboard access to authorized organizers. Set a retention/deletion policy for CNICs and WhatsApp numbers.
-6. Deploy, then send one clearly marked synthetic test submission and verify it in the dashboard before announcing registration.
+Connected endpoint: https://formspree.io/f/xkjjqgbz
 
-No secret API key is needed in the frontend. Never put account tokens or participant records in GitHub. The current submission control stays disabled until setup is complete. No real registration has been submitted during development.
+The form posts multipart data including the required payment screenshot (PNG, JPEG, or WebP, up to 5 MB) to Formspree. File uploads require a compatible paid Formspree plan: https://help.formspree.io/articles/building-your-form/file-uploads.
 
-Formspree submissions can be reviewed in its dashboard. This implementation collects a payment transaction reference, not a receipt file; receipt uploads require a compatible paid Formspree plan. Payment is manually verified by the organizers, not by this form.
+Verify upload entitlement in the organizer dashboard before announcing registrations. No real participant data or payment screenshot has been submitted during development. Test the full delivery flow using an authorized test registration. Submission errors are displayed and do not clear entered data.
 
-Organizer photos could not be retrieved from LinkedIn. Supply authorized photos to replace the labeled portrait placeholders. Names and profile links use the details supplied by the event organizer.
+Payment verification remains manual. Confirm whether the PKR 2,500 early bird / PKR 3,000 regular fee is per participant or per team, and update the visible fee-basis notes.
+
+Limit dashboard access to authorized organizers, configure spam protection and allowed domains, and set a retention period for CNICs, phone numbers, and payment screenshots. Do not store participant records or private account keys in GitHub.
+
+Benefit icons are downloaded from Lucide; license included in public/mtm/icons/LICENSE. GitHub's icon is official artwork downloaded from github.githubassets.com.

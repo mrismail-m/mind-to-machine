@@ -26,7 +26,7 @@ fetch('/mtm/registration-config.json').then(r => {
   if (!r.ok) throw new Error('Configuration unavailable');
   return r.json();
 }).then(config => {
-  if (/^https:\/\/formspree\.io\/f\/[a-zA-Z0-9]+$/.test(config.endpoint) && config.feeBasisConfirmed === true) {
+  if (/^https:\/\/formspree\.io\/f\/[a-zA-Z0-9]+$/.test(config.endpoint)) {
     endpoint = config.endpoint;
     button.disabled = false;
     button.textContent = 'Submit registration ↗';
@@ -39,14 +39,23 @@ form.addEventListener('submit', async event => {
   if (!form.reportValidity()) return;
   const cnics = ['cnic', ...(type.value === 'team' ? ['member_1_cnic', 'member_2_cnic'] : [])].map(key => form.elements[key].value.replace(/\D/g,'')).filter(Boolean);
   if (new Set(cnics).size !== cnics.length) { status.textContent = 'Each participant must have a different CNIC.'; return; }
+  const screenshot = form.elements.payment_screenshot.files[0];
+  if (!screenshot || !['image/png','image/jpeg','image/webp'].includes(screenshot.type) || screenshot.size > 5 * 1024 * 1024) {
+    status.textContent = 'Choose a PNG, JPG, or WebP payment screenshot no larger than 5 MB.';
+    return;
+  }
   button.disabled = true;
   status.textContent = 'Submitting…';
   try {
     const response = await fetch(endpoint, {method:'POST', body:new FormData(form), headers:{Accept:'application/json'}});
-    if (!response.ok) throw new Error('Submission failed');
+    if (!response.ok) {
+      const payload = await response.json().catch(() => ({}));
+      const messages = (payload.errors || []).map(error => error.message).filter(Boolean).join(' ');
+      throw new Error(messages || 'The registration service could not accept this submission. Please contact the organizers.');
+    }
     form.reset(); updateMembers(); pairMember();
     status.textContent = 'Registration received. Your place and payment are subject to organizer verification.';
-  } catch {
-    status.textContent = 'Submission could not be confirmed. Your details are still here; check with the organizers before retrying to avoid a duplicate.';
+  } catch (error) {
+    status.textContent = 'Submission was not confirmed. ' + error.message + ' Your details remain here; contact the organizers before retrying.';
   } finally { button.disabled = false; }
 });
